@@ -357,18 +357,49 @@
           </ul>
         </div>
       </section>
-    </main>
 
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <p></p>
-        <button class="btn-close-modal" data-modal-close>
-          <svg width="11" height="11">
-            <use href="./images/sprite.svg#modal-end-icon"></use>
-          </svg>
-        </button>
+      <!--Modal Window-->
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button class="btn-close-modal" data-modal-close>
+            <svg width="11" height="11">
+              <use href="./images/sprite.svg#modal-end-icon"></use>
+            </svg>
+          </button>
+          <section class="modal-box">
+            <h2 class="modal-title">
+              Leave your details, we will call you back
+            </h2>
+            <form>
+              <label for="user-name">Name</label>
+              <input type="text" name="user-name" id="user-name" />
+              <label for="user-tel">Phone number</label>
+              <input type="tel" name="user-tel" id="user-tel" />
+              <label for="user-mail">Email</label>
+              <input type="email" name="user-mail" id="user-mail" />
+              <label for="user-comment">Comment</label>
+              <textarea name="" id="" cols="30" rows="10"></textarea>
+
+              <div class="modal-foter">
+                <input
+                  type="checkbox"
+                  name="checkbox"
+                  class="checkbox"
+                  value=""
+                  id=""
+                />
+                <p>
+                  I agree for newsletter and accept
+                  <a href="#">Agreement conditions</a>
+                </p>
+              </div>
+
+              <button type="submit">Send message</button>
+            </form>
+          </section>
+        </div>
       </div>
-    </div>
+    </main>
 
     <!--Footer-->
     <footer class="page-footer">
