@@ -335,13 +335,52 @@ img {
 .modal-box {
 }
 
+.form {
+  width: 448px;
+  outline: ;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field input {
+  margin: 0;
+  padding-top: 20px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  font-size: 14px;
+}
+
+.form-field label:not(:first-child) {
+  margin: 4px;
+}
+
+.form-field input::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.form-label:not(:first-child) {
+  margin-top: 10px;
+}
+
 .modal-title {
+  margin-top: 40px;
+  margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
 
   color: var(--title-text-color);
+}
+
+textarea {
+  resize: none;
 }
 
 /* Features */
@@ -804,12 +843,6 @@ img {
   display: flex;
   flex-wrap: wrap;
 }
-
-/*
-.portfolio-card a {
-  text-decoration: none;
-}
-*/
 
 .portfolio-title {
   margin: 0 24px;

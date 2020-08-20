@@ -370,15 +370,41 @@
             <h2 class="modal-title">
               Leave your details, we will call you back
             </h2>
-            <form>
-              <label for="user-name">Name</label>
-              <input type="text" name="user-name" id="user-name" />
-              <label for="user-tel">Phone number</label>
-              <input type="tel" name="user-tel" id="user-tel" />
-              <label for="user-mail">Email</label>
-              <input type="email" name="user-mail" id="user-mail" />
+            <form class="form" autocomplete="off">
+              <div class="form-field">
+                <label for="user-name" class="form-label">Name</label>
+                <input
+                  class="form-input"
+                  type="text"
+                  name="user-name"
+                  id="user-name"
+                  autofocus
+                />
+              </div>
+
+              <div class="form-field">
+                <label for="user-tel" class="form-label">Phone number</label>
+                <input type="tel" name="user-tel" id="user-tel" />
+              </div>
+
+              <div class="form-field">
+                <label for="user-mail" class="form-label">Email</label>
+                <input
+                  type="email"
+                  name="user-mail"
+                  id="user-mail"
+                  autocomplete="on"
+                />
+              </div>
+
               <label for="user-comment">Comment</label>
-              <textarea name="" id="" cols="30" rows="10"></textarea>
+              <textarea
+                name="user-comment"
+                id="user-comment"
+                cols="30"
+                rows="10"
+                placeholder="Enter text"
+              ></textarea>
 
               <div class="modal-foter">
                 <input
