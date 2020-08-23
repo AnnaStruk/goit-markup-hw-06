@@ -366,65 +366,90 @@
               <use href="./images/sprite.svg#modal-end-icon"></use>
             </svg>
           </button>
-          <section class="modal-box">
-            <h2 class="modal-title">
-              Leave your details, we will call you back
-            </h2>
-            <form class="form" autocomplete="off">
-              <div class="form-field">
-                <label for="user-name" class="form-label">Name</label>
-                <input
-                  class="form-input"
-                  type="text"
-                  name="user-name"
-                  id="user-name"
-                  autofocus
-                />
-              </div>
 
-              <div class="form-field">
-                <label for="user-tel" class="form-label">Phone number</label>
-                <input type="tel" name="user-tel" id="user-tel" />
-              </div>
+          <b class="modal-title">
+            Leave your details, we will call you back
+          </b>
+          <form class="form" autocomplete="off">
+            <div class="form-field">
+              <label for="user-name" class="form-label">Name</label>
+              <input
+                class="form-input"
+                type="text"
+                name="user-name"
+                id="user-name"
+                autofocus
+              />
+              <span class="modal-icon">
+                <svg width="12" height="12">
+                  <use href="./images/sprite.svg#modal-man-icon"></use>
+                </svg>
+              </span>
+            </div>
 
-              <div class="form-field">
-                <label for="user-mail" class="form-label">Email</label>
-                <input
-                  type="email"
-                  name="user-mail"
-                  id="user-mail"
-                  autocomplete="on"
-                />
-              </div>
+            <div class="form-field">
+              <label for="user-tel" class="form-label">Phone number</label>
+              <input
+                class="form-input"
+                type="tel"
+                name="user-tel"
+                id="user-tel"
+              />
+              <span class="modal-icon">
+                <svg width="13" height="13">
+                  <use href="./images/sprite.svg#modal-call-icon"></use>
+                </svg>
+              </span>
+            </div>
 
+            <div class="form-field">
+              <label for="user-mail" class="form-label">Email</label>
+              <input
+                class="form-input"
+                type="email"
+                name="user-mail"
+                id="user-mail"
+                autocomplete="on"
+              />
+              <span class="modal-icon">
+                <svg width="15" height="12">
+                  <use href="./images/sprite.svg#modal-send-icon"></use>
+                </svg>
+              </span>
+            </div>
+
+            <div class="form-field">
               <label for="user-comment" class="form-label">Comment</label>
               <textarea
+                class="form-textarea"
                 name="user-comment"
                 id="user-comment"
-                cols="47"
+                cols="30"
                 rows="5"
                 placeholder="Enter text"
               ></textarea>
+            </div>
 
-              <div class="modal-foter">
-                <input
-                  type="checkbox"
-                  name="checkbox"
-                  class="checkbox"
-                  value=""
-                  id=""
-                />
-                <p>
-                  I agree for newsletter and accept
-                  <a href="#">Agreement conditions</a>
-                </p>
-              </div>
+            <div class="policy-field">
+              <input
+                type="checkbox"
+                name="checkbox"
+                class="checkbox"
+                value=""
+                id=""
+              />
+              <span>
+                I agree for newsletter and accept
+                <a href="#">Agreement conditions</a>
+              </span>
+            </div>
 
+            <div class="btn-field">
               <button class="btn-submit-modal" type="submit">
                 Send message
               </button>
-            </form>
-          </section>
+            </div>
+          </form>
         </div>
       </div>
     </main>
