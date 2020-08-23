@@ -431,25 +431,26 @@
             </div>
 
             <div class="policy-field">
-              <input
-                type="checkbox"
-                name="checkbox"
-                class="checkbox"
-                value=""
-                id=""
-              />
-              <span>
-                I agree for newsletter and accept
-                <a href="#">Agreement conditions</a>
-              </span>
-            </div>
-
-            <div class="btn-field">
-              <button class="btn-submit-modal" type="submit">
-                Send message
-              </button>
+              <label class="checkbox-label">
+                <input
+                  class="checkbox-input"
+                  type="checkbox"
+                  name="checkbox"
+                  value="policy"
+                />
+                <span class="checkbox-icon"></span>
+                <span>
+                  I agree for newsletter and accept
+                  <a class="policy-text" href="#">Agreement conditions</a>
+                </span>
+              </label>
             </div>
           </form>
+          <div class="btn-field">
+            <button class="btn-submit-modal" type="submit">
+              Send message
+            </button>
+          </div>
         </div>
       </div>
     </main>
@@ -516,13 +517,15 @@
 
         <div class="footer-sign-up">
           <b class="join-us">Sign up for the newsletter</b>
-          <input class="input-mail" placeholder="E-mail" />
-          <button class="submit-button">
-            Subscribe
-            <svg class="submit-icon" height="24" width="24">
-              <use href="./images/sprite.svg#icon-send"></use>
-            </svg>
-          </button>
+          <form class="footer-form">
+            <input class="input-mail" type="email" placeholder="E-mail" />
+            <button class="submit-button">
+              Subscribe
+              <svg class="submit-icon" height="24" width="24">
+                <use href="./images/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
