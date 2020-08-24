@@ -418,6 +418,10 @@ textarea:focus {
   outline: 0;
 }
 
+.form-field:focus-within svg {
+  fill: var(--accent-color);
+}
+
 .form-field:hover .modal-icon {
   fill: var(--accent-color);
 }
